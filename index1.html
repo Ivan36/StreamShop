@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StreamShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/responsive.css" rel="Stylesheet">
+  <link href="admin/ css/sb-admin.css" rel="stylesheet">
+  <link href="css/client.css" rel="Stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin: 1% 1%;
+      margin-bottom: 0;
+      border-radius: 5px;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body >
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Inquiries</a></li>
+        <li><a href="admin/login.php">Online Shop</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#demo" class="btn btn-info" data-toggle="collapse"> Login user</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron ">
+  <div class="container text-center">
+    <div class="row"">
+                
+<div class="col-sm-3">
+                <img src="images/logo.png" style="width: 100%" class="img-responsive" alt="innovation-streams-limited">
+            </div>
+
+            <div class="col-sm-6 ">
+                    <header style="margin-top: 2%;">CLIENTS MANAGEMENT SYSTEM</header>
+                     <p>Innovation is why we exist...</p>
+    <p>(Using Technology to make the world a better place)</p>
+                </div>
+               
+            </div>   
+   
+  </div>
+</div>
+  <div class="row">
+    <div class="col-sm-4"></div>
+     <div class="col-sm-4">
+                  <div id="demo" class="collapse">
+     <form method="POST" action="process.php">
+      
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="uName" name="uName" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
+                <label for="inputEmail">User Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="required">
+                <label for="inputPassword">Password</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me">
+                  Remember Password
+                </label>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" name="signin" value="Sign in">
+          </form>
+          <div class="text-center">
+           <a href="../signup.php" data-toggle="modal" data-target=".demo-popup">Signup to get an account</a>
+           <a class="d-block small" href="forgot-password.php">Forgot Password?</a>
+         </div>
+       </div>
+  
+
+
+                </div>
+                <div class="col-sm-4">
+                  
+                </div>
+
+  </div>
+<div class="container-fluid bg-3 text-center">    
+  <h2 style="color: blue;">Istreams Shop Products</h2><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Thinkpad laptops</p>
+      <img src="images/09_Thinkpad_X380_Front_forward_facing_HD_Camera_Black.jpg" class="img-responsive" height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Dell Desktops</p>
+      <img src="images/dell_u2417h_24_16_9_ips_1222870.jpg" class="img-responsive img-rounded"  height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Hp Desktops</p>
+       <img src="images/png desktop computer.png" class="img-responsive img-rounded"  height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3">
+       <p>Lenovo Laptops</p>
+       <img src="images/png lenovo.png" class="img-responsive img-rounded"  height="200" width="200" alt="Image">
+     </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Dell-charger</p>
+      <img src="images/png Dell-charger.png" class="img-responsive" height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>speakers</p>
+      <img src="images/png speakers.png" class="img-responsive"  height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>laptop bag</p>
+      <img src="images/png laptop bag.png" class="img-responsive" height="200" width="200" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>router</p>
+      <img src="images/png router.png" class="img-responsive"  height="200" width="200" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>&copy Ivan 2018</p>
+</footer>
+
+</body>
+</html>
